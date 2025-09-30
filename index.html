@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EduAI - Nền tảng học trực tuyến</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://via.placeholder.com/36x36.png?text=EA" alt="logo" class="me-2 rounded-circle">
+                EduAI
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+                    <li class="nav-item"><a class="nav-link active" href="#">Khóa học</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Doanh nghiệp</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Giảng viên</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-outline-primary me-2 d-none d-md-inline" href="#">Đăng ký dạy</a>
+                    <a class="btn btn-outline-secondary me-2" href="#">Đăng nhập</a>
+                    <a class="btn btn-primary" href="#">Bắt đầu học</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container text-center">
+            <h1 class="display-6 fw-bold">Học trực tuyến với AI — phát triển kỹ năng, thăng tiến sự nghiệp</h1>
+            <p class="lead text-muted mb-4">Hàng ngàn khóa học chất lượng, trợ lý AI hỗ trợ học tập, thanh toán nhanh
+                với VNPAY.</p>
+
+            <!-- Search -->
+            <div class="search-bar">
+                <form class="input-group shadow-sm rounded-lg bg-white p-2">
+                    <span class="input-group-text bg-white border-0"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+                            height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6 6 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.414-1.415l-3.85-3.85zM12 6a6 6 0 1 1-12 0 6 6 0 0 1 12 0z" />
+                        </svg></span>
+                    <input type="text" class="form-control border-0"
+                        placeholder="Tìm khóa học, kỹ năng hoặc giảng viên">
+                    <select class="form-select border-0 d-none d-md-block" style="max-width:220px;">
+                        <option selected>Tất cả chuyên mục</option>
+                        <option>IT & Phát triển</option>
+                        <option>Thiết kế</option>
+                        <option>Marketing</option>
+                        <option>Business</option>
+                    </select>
+                    <button class="btn btn-primary px-4">Tìm kiếm</button>
+                </form>
+            </div>
+
+            <!-- Category quick links -->
+            <div class="mt-4 d-flex justify-content-center flex-wrap">
+                <div class="category-pill me-2">Python</div>
+                <div class="category-pill me-2">Data Science</div>
+                <div class="category-pill me-2">AI Tutor</div>
+                <div class="category-pill me-2">VNPAY & Thanh toán</div>
+                <div class="category-pill me-2">Thiết kế UI/UX</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="my-5">
+        <div class="container">
+            <!-- Featured / Promo -->
+            <section class="promo-section mb-5">
+                <div class="row g-4 align-items-stretch">
+                    <!-- Featured Course -->
+                    <div class="col-lg-8">
+                        <div class="promo-card shadow-sm d-flex flex-row">
+                            <img src="https://picsum.photos/150/100?course" alt="promo" class="promo-img">
+                            <div class="promo-content">
+                                <h5 class="fw-bold mb-1">🔥 Khóa học bán chạy: Lập Trình Python - Từ cơ bản đến nâng cao
+                                </h5>
+                                <p class="text-muted small mb-2">Học từng bước, thực hành nhiều bài tập, có trợ lý AI
+                                    giải thích.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Khám phá</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Teacher Promo -->
+                    <div class="col-lg-4">
+                        <div class="promo-card shadow-sm text-center h-100 d-flex flex-column justify-content-center">
+                            <h6 class="fw-bold mb-2">Bạn là giảng viên?</h6>
+                            <p class="text-muted small mb-3">Tạo khóa học, bán và nhận thanh toán qua VNPAY.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Bắt đầu dạy</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Courses carousel (thịnh hành) -->
+            <section class="mb-5">
+                <div class="d-flex align-items-center mb-3">
+                    <h4 class="fw-bold mb-0">Các khóa học thịnh hành</h4>
+                    <a href="#" class="ms-auto text-decoration-none">Xem tất cả →</a>
+                </div>
+
+                <div id="courseCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row gx-3">
+                                <!-- Card 1 -->
+                                <div class="col-md-3">
+                                    <div class="card course-card shadow-sm position-relative">
+                                        <span class="badge bg-danger card-badge">Thịnh hành</span>
+                                        <img src="https://picsum.photos/400/250?1" class="card-img-top" alt="">
+                                        <div class="card-body d-flex flex-column">
+                                            <h6 class="course-card-title">Làm Chủ Git và GitHub Từ A đến Z</h6>
+                                            <div class="course-card-author">AI Coding</div>
+                                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                <div><span class="text-warning">★</span> 4.9 <span
+                                                        class="text-muted ms-2">230</span></div>
+                                                <div class="text-end">
+                                                    <div class="fw-bold text-danger">279.000 đ</div>
+                                                    <div class="price-old">1.039.000 đ</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="col-md-3">
+                                    <div class="card course-card shadow-sm position-relative">
+                                        <span class="badge bg-success card-badge">Bán chạy</span>
+                                        <img src="https://picsum.photos/400/250?2" class="card-img-top" alt="">
+                                        <div class="card-body d-flex flex-column">
+                                            <h6 class="course-card-title">AWS Cloud for beginner (Vietnamese)</h6>
+                                            <div class="course-card-author">Linh Nguyen</div>
+                                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                <div><span class="text-warning">★</span> 4.9 <span
+                                                        class="text-muted ms-2">1.119</span></div>
+                                                <div class="text-end">
+                                                    <div class="fw-bold text-danger">309.000 đ</div>
+                                                    <div class="price-old">1.829.000 đ</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="col-md-3">
+                                    <div class="card course-card shadow-sm position-relative">
+                                        <span class="badge bg-success card-badge">Bán chạy</span>
+                                        <img src="https://picsum.photos/400/250?3" class="card-img-top" alt="">
+                                        <div class="card-body d-flex flex-column">
+                                            <h6 class="course-card-title">Lập Trình Python Từ Cơ Bản Đến Nâng Cao</h6>
+                                            <div class="course-card-author">AI Coding</div>
+                                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                <div><span class="text-warning">★</span> 4.8 <span
+                                                        class="text-muted ms-2">841</span></div>
+                                                <div class="text-end">
+                                                    <div class="fw-bold text-danger">279.000 đ</div>
+                                                    <div class="price-old">1.059.000 đ</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 4 -->
+                                <div class="col-md-3">
+                                    <div class="card course-card shadow-sm position-relative">
+                                        <img src="https://picsum.photos/400/250?4" class="card-img-top" alt="">
+                                        <div class="card-body d-flex flex-column">
+                                            <h6 class="course-card-title">Tâm lý học Xã hội - Social Psychology 101</h6>
+                                            <div class="course-card-author">Mindfullness Life</div>
+                                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                <div><span class="text-warning">★</span> 4.8 <span
+                                                        class="text-muted ms-2">152</span></div>
+                                                <div class="text-end">
+                                                    <div class="fw-bold text-danger">279.000 đ</div>
+                                                    <div class="price-old">399.000 đ</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row gx-3">
+                                <div class="col-md-3">
+                                    <div class="card course-card shadow-sm">
+                                        <img src="https://picsum.photos/400/250?5" class="card-img-top" alt="">
+                                        <div class="card-body d-flex flex-column">
+                                            <h6 class="course-card-title">Phân tích dữ liệu với Pandas</h6>
+                                            <div class="course-card-author">Data Master</div>
+                                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                <div><span class="text-warning">★</span> 4.7 <span
+                                                        class="text-muted ms-2">980</span></div>
+                                                <div class="text-end">
+                                                    <div class="fw-bold text-danger">199.000 đ</div>
+                                                    <div class="price-old">899.000 đ</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card course-card shadow-sm position-relative">
+                                        <img src="https://picsum.photos/400/250?5" class="card-img-top" alt="">
+                                        <div class="card-body d-flex flex-column">
+                                            <h6 class="course-card-title">Kinh tế vi mô cơ bản</h6>
+                                            <div class="course-card-author">Eco Learn</div>
+                                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                <div><span class="text-warning">★</span> 4.5 <span
+                                                        class="text-muted ms-2">680</span></div>
+                                                <div class="text-end">
+                                                    <div class="fw-bold text-danger">159.000 đ</div>
+                                                    <div class="price-old">499.000 đ</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card course-card shadow-sm position-relative">
+                                        <img src="https://picsum.photos/400/250?6" class="card-img-top" alt="">
+                                        <div class="card-body d-flex flex-column">
+                                            <h6 class="course-card-title">Thiết kế UX/UI cho người mới bắt đầu</h6>
+                                            <div class="course-card-author">Design Academy</div>
+                                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                <div><span class="text-warning">★</span> 4.6 <span
+                                                        class="text-muted ms-2">2.150</span></div>
+                                                <div class="text-end">
+                                                    <div class="fw-bold text-danger">349.000 đ</div>
+                                                    <div class="price-old">899.000 đ</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card course-card shadow-sm position-relative">
+                                        <img src="https://picsum.photos/400/250?7" class="card-img-top" alt="">
+                                        <div class="card-body d-flex flex-column">
+                                            <h6 class="course-card-title">Marketing Digital toàn diện</h6>
+                                            <div class="course-card-author">Growth Hub</div>
+                                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                <div><span class="text-warning">★</span> 4.7 <span
+                                                        class="text-muted ms-2">3.020</span></div>
+                                                <div class="text-end">
+                                                    <div class="fw-bold text-danger">499.000 đ</div>
+                                                    <div class="price-old">1.299.000 đ</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#courseCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Instructors / Partners -->
+            <section class="mb-5">
+                <div class="d-flex align-items-center mb-3">
+                    <h4 class="fw-bold mb-0">Top giảng viên</h4>
+                    <a href="#" class="ms-auto text-decoration-none">Xem tất cả →</a>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-6 col-md-3">
+                        <div class="p-3 bg-white rounded-lg text-center shadow-sm">
+                            <img src="https://picsum.photos/100/100?i=1" class="rounded-circle mb-2" alt="">
+                            <div class="fw-semibold">Linh Nguyen</div>
+                            <div class="text-muted small">Cloud & DevOps</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="p-3 bg-white rounded-lg text-center shadow-sm">
+                            <img src="https://picsum.photos/100/100?i=2" class="rounded-circle mb-2" alt="">
+                            <div class="fw-semibold">AI Coding</div>
+                            <div class="text-muted small">AI & ML</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="p-3 bg-white rounded-lg text-center shadow-sm">
+                            <img src="https://picsum.photos/100/100?i=3" class="rounded-circle mb-2" alt="">
+                            <div class="fw-semibold">Design Academy</div>
+                            <div class="text-muted small">UI/UX</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="p-3 bg-white rounded-lg text-center shadow-sm">
+                            <img src="https://picsum.photos/100/100?i=4" class="rounded-circle mb-2" alt="">
+                            <div class="fw-semibold">Dev Academy</div>
+                            <div class="text-muted small">Fullstack</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5 class="text-white fw-bold">EduAI</h5>
+                    <p class="small text-white">Nền tảng giáo dục trực tuyến tích hợp AI và cổng thanh toán VNPAY.</p>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-white">Sản phẩm</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-white">Khóa học</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Chứng chỉ</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Doanh nghiệp</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-white">Cộng đồng</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-white">Blog</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Diễn đàn</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-white">Liên hệ</h6>
+                    <p class="small text-white mb-1">Email: support@eduai.example</p>
+                    <p class="small text-white">© 2025 EduAI. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

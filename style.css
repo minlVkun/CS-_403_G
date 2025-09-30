@@ -1,0 +1,197 @@
+:root {
+    --brand: #1f8ef1;
+    --muted: #6c757d;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.hero {
+    background: linear-gradient(90deg, rgba(31, 142, 241, 0.06), rgba(103, 58, 183, 0.03));
+    padding: 56px 0;
+}
+
+.search-bar {
+    max-width: 900px;
+    margin: 0 auto;
+    transform: translateY(10px);
+}
+
+.course-card img {
+    height: 160px;
+    object-fit: cover;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.card-badge {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    z-index: 2;
+}
+
+.card .card-body {
+    padding: 1rem;
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-left: .6rem;
+}
+
+.instructor {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.chip {
+    border-radius: 999px;
+    padding: .25rem .6rem;
+    font-size: .85rem;
+    background: #eef4ff;
+    color: var(--brand);
+}
+
+.category-pill {
+    background: #f6f9ff;
+    border-radius: 999px;
+    padding: 8px 14px;
+    margin-right: .5rem;
+    margin-bottom: .6rem;
+    cursor: pointer;
+}
+
+.card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(31, 142, 241, 0.08);
+    transition: all .18s ease;
+}
+
+.rounded-lg {
+    border-radius: .8rem !important;
+}
+
+footer {
+    background: #0f1724;
+    color: #cbd5e1;
+    padding: 40px 0;
+}
+
+@media (max-width:767px) {
+    .search-bar {
+        padding: 0 16px;
+    }
+
+    .hero {
+        padding: 40px 0 30px;
+    }
+}
+
+/* Căn giữa nút prev/next trong carousel */
+#courseCarousel .carousel-control-prev,
+#courseCarousel .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    opacity: 0.9;
+}
+
+#courseCarousel .carousel-control-prev {
+    left: -20px;
+    /* lùi ra ngoài một chút */
+}
+
+#courseCarousel .carousel-control-next {
+    right: -20px;
+    /* lùi ra ngoài một chút */
+}
+
+#courseCarousel .carousel-control-prev-icon,
+#courseCarousel .carousel-control-next-icon {
+    background-size: 100% 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* nền tròn tối */
+    padding: 10px;
+}
+
+/* Card khóa học */
+.course-card {
+    height: 100%;
+    /* mọi card bằng nhau */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Ảnh khóa học */
+.course-card img {
+    height: 180px;
+    /* cố định chiều cao */
+    object-fit: cover;
+    /* crop ảnh */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Tiêu đề khóa học */
+.course-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 8px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* giới hạn 2 dòng */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 48px;
+    /* giữ chiều cao đồng nhất */
+}
+
+/* Tên tác giả */
+.course-card-author {
+    font-size: 0.9rem;
+    color: #666;
+    min-height: 20px;
+    /* đảm bảo thẳng hàng */
+}
+
+/* Giá và rating */
+.course-card-footer {
+    margin-top: auto;
+}
+
+.promo-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px;
+    transition: all 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.promo-img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 16px;
+}
+
+.promo-content {
+    flex: 1;
+}
